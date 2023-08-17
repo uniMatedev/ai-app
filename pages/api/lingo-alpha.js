@@ -1,32 +1,30 @@
-const { Configuration, OpenAIApi } = require("openai");
+import { Configuration, OpenAIApi } from "openai";
 
 export default async function handler(req, res) {
-  if (req.method !== 'POST') { 
-    return res.status(405).end(); // Method Not Allowed if not a GET request
-  }
-  const prompt =  req.body.prompt
   try {
     const configuration = new Configuration({
       apiKey: process.env.OPENAI_API_KEY,
     });
     const openai = new OpenAIApi(configuration);
-    const completion = await openai.createCompletion({
-      model: "text-davinci-003",
-      prompt: prompt,
-      // Add additional parameters if needed
-      temperature: 0.7,
-      max_tokens: 60,
+    const messages = req.body.messages;
+    const completion = await openai.createChatCompletion({
+      model: "gpt-3.5-turbo-16k",
+      messages: [
+        {
+          role: "system",
+          content:
+          "Generate JSX content for user messages without using the 'return' keyword or enclosing parentheses. Just provide the JSX directly. E.g., for a greeting response: <div className='assistant-message'>Hello!</div>"
+        },
+        ...messages,
+        // { role: "user", content: userInput }
+      ],
     });
-    res.status(200).json({ data: response.data.data});
-
+    
+    res.status(200).json({ data: completion.data.choices[0].message.content });
+    console.log("Received:", req.body);
   } catch (error) {
-    if (error.response && error.response.status === 429) {
-      // Handling rate limits
-      res.status(429).json({ error: "Rate limit exceeded" });
-    } else if (error.response) {
-      res.status(error.response.status).json(error.response.data);
-    } else {
-      res.status(500).json({ error: error.message });
-    }
+    res
+      .status(500)
+      .json({ error: "Internal Server Error", message: error.message });
   }
 }

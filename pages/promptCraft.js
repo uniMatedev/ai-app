@@ -14,13 +14,12 @@ function extractInnerHtml(jsxString) {
   const matched = jsxString.match(/return\s*\(\s*(<div.*?>.*?<\/div>)\s*\);/);
   return matched && matched[1];
 }
-export default function Home() {
+export default function promptCraft() {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false); // Loading state added
   const [userInput, setUserInput] = useState("");
   const handleSubmit = async () => {
     setLoading(true);
-    setUserInput("")
     try {
       // Combine the existing messages with the new user message before making the API call
       const combinedMessages = [
@@ -46,8 +45,6 @@ export default function Home() {
     } catch (error) {
       console.error("Error:", error);
     }
-   
-    setLoading(false)
   };
   return (
     <main className="flex min-h-screen flex-col items-center p-24 bg-gray-100 text-gray-800">
@@ -87,7 +84,7 @@ export default function Home() {
 })}
 
     </ul>
-<div>{messages.content}</div>
+
     <form 
     onSubmit={(e) => {
         e.preventDefault(); // This prevents the default form submission
@@ -99,8 +96,6 @@ export default function Home() {
         className="text-gray-800 bg-gray-200 p-2 border border-gray-500 rounded-lg focus:outline-none focus:border-gray-600"
         onChange={(e) => setUserInput(e.target.value)}
         type="text"
-        placeholder={loading ? "Loading" : "Type Something"}
-        value={userInput}
     />
 
     <button
