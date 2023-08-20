@@ -20,17 +20,7 @@ export default function Home() {
       "title": "Cosmic Reverie: Van Gogh's Odyssey Through the Unknown Galaxy",
       "description": "Mythical galaxy incorporating grand cosmic designs and celestial bodies with a touch of Vincent van Gogh's Starry Night influence::15 Bioluminescent nebulas, stardust, spiraling black holes, and brilliantly lit stars painting a panoramic view of the universe::20 Emojis illustrating the cosmic narrative - 🌌🌟🌠🔭::10 Observatories on distant, undiscovered planets, playing the role of silent observers to the cosmic dance, signifying the curiosity of sentient life ::22 Universe teeming with captivating celestial phenomena, solar winds, light echoes, and cosmic waves, inducing a sense of awe-inspiring vastness and the unknown::18 --ar 21:9"
     },
-    {
-      "icon": "/procure.png",
-      "title": "Procurement and Logistics",
-      "description": "Streamlining procurement and logistics processes to enhance efficiency, reduce costs, and ensure timely delivery of goods and services."
-    },
-    {
-      "icon": "/engin.png",
-      "title": "Engineering",
-      "description": "Providing expert engineering solutions, from project design to implementation, with a focus on quality and innovation."
-    }
-    // ... Add more service objects as needed
+    
   ]
   );
   const handleFormSubmit = async (e) => {
@@ -60,26 +50,29 @@ export default function Home() {
   <header className="bg-gray-900 text-gray-100 shadow-lg rounded-lg p-6 border border-gray-700">
     <div className="container mx-auto p-4 flex flex-wrap justify-between items-center">
       <div className="w-full lg:w-auto flex flex-col lg:flex-row items-center space-y-2 lg:space-x-4">
-        <Image src="/aetherpond.png" alt="ISP Logo" width={600} height={600}/>
+        <Image src="/aetherpond.png" alt="ISP Logo" width={400} height={400}/>
         <div className="text-center lg:text-left">
           <h1 className="text-lg lg:text-xl font-semibold w-full lg:w-auto truncate text-gray-200">
             AetherPond Scriptor
           </h1>
         </div>
       </div>
-      <button className="lg:hidden p-3 focus:outline-none focus:bg-gray-700 mt-2 mx-auto block text-2xl" onClick={() => setIsOpen(!isOpen)}>
+      {/* <button className="lg:hidden p-3 focus:outline-none focus:bg-gray-700 mt-2 mx-auto block text-2xl" onClick={() => setIsOpen(!isOpen)}>
         {isOpen ? "✖" : "☰"}
-      </button>
-      <nav className={`w-full lg:w-auto mt-4 lg:mt-0 lg:ml-8 lg:flex ${isOpen ? "block" : "hidden"}`}>
+      </button> */}
+      {/* <nav className={`w-full lg:w-auto mt-4 lg:mt-0 lg:ml-8 lg:flex ${isOpen ? "block" : "hidden"}`}>
         <ul className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6 w-full lg:w-auto">
           <li className="w-full text-center lg:w-auto">
-            <a href="#" className="hover:text-gray-400">
+            <a href="/aetherpond" className="hover:text-gray-400">
               Home
             </a>
+            <a href="#" className="hover:text-gray-400">
+              About
+            </a>
           </li>
-          {/* ... other links ... */}
+         
         </ul>
-      </nav>
+      </nav> */}
     </div>
   </header>
 
