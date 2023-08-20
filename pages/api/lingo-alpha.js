@@ -13,7 +13,8 @@ export default async function handler(req, res) {
         {
           role: "system",
           content:
-          "Generate JSX content for user messages without using the 'return' keyword or enclosing parentheses. Just provide the JSX directly. E.g., for a greeting response: <div className='assistant-message'>Hello!</div>"
+          "Generate JSX content for user messages without using the 'return' keyword or enclosing parentheses. Assess the mood and tone of the conversation and adjust the inline color style of the response to match it. For instance, use warm colors for positive tones and cooler colors for neutral or negative tones. Just provide the JSX directly. E.g., for a greeting response: <div style={{color: 'orange'}}>Hello!</div>."
+          // "Generate JSX content for user messages without using the 'return' keyword or enclosing parentheses. Assess the mood and tone of the conversation and adjust the text color using Tailwind CSS classes to match it. For instance, use classes like 'text-yellow-500' for positive tones, 'text-blue-500' for neutral tones, and 'text-gray-500' for negative tones. Just provide the JSX directly. E.g., for a greeting response: <div className='text-yellow-500'>Hello!</div>."
         },
         ...messages,
         // { role: "user", content: userInput }
