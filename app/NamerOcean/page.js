@@ -1,13 +1,12 @@
 "use client";
 import { useState } from "react";
 import React from "react";
-import {  callLingoCharlie } from "@/lib/apiHandlers";
+import {  callLingoCharlie, callLingoDelta } from "@/lib/apiHandlers";
 import Image from "next/image";
 export default function Home() {
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [userInput, setUserInput] = useState("");
-  const [isOpen, setIsOpen] = useState(false);
   const [services] = useState([
     
     {
@@ -29,7 +28,7 @@ export default function Home() {
     
 
     try {
-      const data = await callLingoCharlie(userInput, messages); // Call the separate API function
+      const data = await callLingoDelta(userInput, messages); // Call the separate API function
 
       setMessages((prevMessages) => [
         ...prevMessages,
@@ -50,10 +49,10 @@ export default function Home() {
   <header className="bg-gray-900 text-gray-100 shadow-lg rounded-lg p-6 border border-gray-700">
     <div className="container mx-auto p-4 flex flex-wrap justify-between items-center">
       <div className="w-full lg:w-auto flex flex-col lg:flex-row items-center space-y-2 lg:space-x-4">
-        <Image src="/aetherpond.png" alt="ISP Logo" width={400} height={400}/>
+        <Image src="/namerocean.png" alt="ISP Logo" width={600} height={400}/>
         <div className="text-center lg:text-left">
           <h1 className="text-lg lg:text-xl font-semibold w-full lg:w-auto truncate text-gray-200">
-            AetherPond Scriptor
+          NamerOcean
           </h1>
         </div>
       </div>
@@ -63,8 +62,8 @@ export default function Home() {
 
   <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-900 mt-10">
   <div className="bg-blue-700 text-white p-4 rounded-t-lg flex items-center">
-  <img src="/chateye.png" alt="Chat Icon" className="h-6 w-auto mr-2" />
-  <h2 className="text-2xl font-bold">AetherPond Scriptor Interface</h2>
+  <img src="/namerocean.png" alt="Chat Icon" className="h-6 w-auto mr-2" />
+  <h2 className="text-2xl font-bold">NamerOcean Interface</h2>
 </div>
 <ul className="space-y-4 p-4 bg-gray-900 rounded-b-lg text-gray-100">
   {messages.map((message, index) => {
@@ -80,7 +79,7 @@ export default function Home() {
       return (
         <li key={index} className="mb-4 flex justify-start">
           <div className="inline-block p-4 bg-gray-900 border border-gray-700 rounded-lg max-w-md text-gray-100 shadow-md">
-            <span className="font-semibold">ISP Assistant:</span> {message.content}
+            <span className="font-semibold">NamerOcean:</span> {message.content}
           </div>
         </li>
       );
