@@ -6,7 +6,7 @@ import { callLingoCharlie, callLingoDelta, callLingoEcho, callLingoFoxtrot } fro
 import Header from "@/pages/components/Header";
 import Introduction from "@/pages/components/Introduction";
 import ChatBox from "@/pages/components/ChatBox";
-import Cards from "@/pages/components/Cards";
+
 import Selector from "@/pages/components/Selector";
 import { assistants } from "@/data/assistants";
 
@@ -74,7 +74,7 @@ export default function Home() {
         setUserInput={setUserInput}
         handleFormSubmit={handleFormSubmit}
       />
-      <Cards services={assistant.services} />
+      
     </main>
     //////////////////////////
   );
