@@ -14,7 +14,7 @@ export default function Home() {
         <Assistant chooseAssistant={2} />
       </div>
       <div>
-        <Assistant chooseAssistant={3} />
+        {/* <Assistant chooseAssistant={3} /> */}
       </div>
     </main>
   );
