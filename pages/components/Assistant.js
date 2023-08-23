@@ -2,12 +2,13 @@
 //////////////////////////
 import { useState } from "react";
 import React from "react";
-import { callLingoCharlie, callLingoDelta, callLingoEcho, callLingoFoxtrot } from "@/lib/apiHandlers";
-import Header from "@/pages/components/Header";
-import Introduction from "@/pages/components/Introduction";
+import {
+  callLingoCharlie,
+  callLingoDelta,
+  callLingoEcho,
+  callLingoFoxtrot,
+} from "@/lib/apiHandlers";
 import ChatBox from "@/pages/components/ChatBox";
-import Cards from "@/pages/components/Cards";
-import Selector from "@/pages/components/Selector";
 import { assistants } from "@/data/assistants";
 
 const functionMapping = {
@@ -18,7 +19,7 @@ const functionMapping = {
 };
 
 //////////////////////////
-export default function Assistant({ chooseAssistant}) {
+export default function Assistant({ chooseAssistant }) {
   //////////////////////////
   const [assistant, setAssistant] = useState(assistants[chooseAssistant]);
   const [messages, setMessages] = useState([]);
@@ -62,9 +63,6 @@ export default function Assistant({ chooseAssistant}) {
   return (
     //////////////////////////
     <main className="flex min-h-screen flex-col items-center p-24 bg-gray-900 text-gray-100">
-      {/* <Selector assistants={assistants} setAssistant={setAssistant} />
-      <Header title={assistant.name} icon={assistant.avatar} />
-      <Introduction intro={assistant.introduction} /> */}
       <ChatBox
         title={assistant.name}
         icon={assistant.chatIcon}
@@ -74,7 +72,6 @@ export default function Assistant({ chooseAssistant}) {
         setUserInput={setUserInput}
         handleFormSubmit={handleFormSubmit}
       />
-      {/* <Cards services={assistant.services} /> */}
     </main>
     //////////////////////////
   );
