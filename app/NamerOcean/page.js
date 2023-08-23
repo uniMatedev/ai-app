@@ -59,8 +59,11 @@ export default function Home() {
     
     </div>
   </header>
+  <div className=" text-gray-800 bg-gray-200 p-4 rounded-lg shadow-md mb-6">
+  <p>Hello! I am NamerOcean, an AI Assistant Namer. My main task is to help you create unique and thematic names for your new specialized AI virtual assistants. I guide you through the process by recognizing the core functionality of your assistant, selecting a term that emphasizes its main role, and pairing it with a geographical element that suits its function. My mission is delivering a unique, catchy, and scalable name that aligns with your brand identity and emphasizes your assistant's unique purpose.</p>
+</div>
 
-  <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-900 mt-10">
+  <div className=" bg-white shadow-lg rounded-lg p-6 border border-gray-900 mt-10">
   <div className="bg-blue-700 text-white p-4 rounded-t-lg flex items-center">
   <img src="/namerocean.png" alt="Chat Icon" className="h-6 w-auto mr-2" />
   <h2 className="text-2xl font-bold">NamerOcean Interface</h2>

@@ -1,0 +1,78 @@
+{
+    "assistants": [
+      {
+        "id": "aetherpond",
+        "name": "AetherPond Scriptor",
+        "avatar": "/aetherpond.png",
+        "chatIcon": "/chateye.png",
+        "title": "AetherPond Scriptor",
+        "introduction": "Hello, I am AetherPond Scriptor, an AI Mid-Journey Prompt Generator...",
+        "system": "callLingoCharlie",
+        "services": [
+          {
+            "icon": "/dragon.png",
+            "title": "Dragon Whispers: A Twilight Dance in the Enchanted Forest",
+            "description": "Mythical forest inhabited by mischievous, miniature dragons..."
+          },
+          {
+            "icon": "/stary.png",
+            "title": "Cosmic Reverie: Van Gogh's Odyssey Through the Unknown Galaxy",
+            "description": "Mythical galaxy incorporating grand cosmic designs..."
+          }
+        ]
+      },
+      {
+        "id": "namerocean",
+        "name": "NamerOcean",
+        "avatar": "/namerocean.png",
+        "chatIcon": "/namerocean.png",
+        "title": "NamerOcean",
+        "introduction": "Hello! I am NamerOcean, an AI Assistant Namer. My main task is to help you create unique and thematic names for your new specialized AI virtual assistants. I guide you through the process by recognizing the core functionality of your assistant, selecting a term that emphasizes its main role, and pairing it with a geographical element that suits its function. My mission is delivering a unique, catchy, and scalable name that aligns with your brand identity and emphasizes your assistant's unique purpose.",
+        "system": "callLingoDelta",
+        "services": [
+          {
+            "icon": "",
+            "title": "",
+            "description": ""
+          }
+          
+        ]
+
+      },
+      {
+        "id": "profilerdelta",
+        "name": "ProfilerDelta",
+        "avatar": "/profilerdelta.png",
+        "chatIcon": "/profilerdeltaicon.png",
+        "title": "Title for ProfilerDelta",
+        "introduction": "Introduction for ProfilerDelta",
+        "system": "callLingoFoxtrot",
+        "services": [
+          {
+            "icon": "/serviceicon.png",
+            "title": "Service Title",
+            "description": "Service Description"
+          }
+        ]
+      },
+      {
+        "id": "clarifiercape",
+        "name": "ClarifierCape",
+        "avatar": "/clarifiercape.png",
+        "chatIcon": "/clarifiercape.png",
+        "title": "ClarifierCape",
+        "introduction": "Hello, I am ClarifierCape, a specialized AI Assistant. My purpose is to help users refine their text, enhancing clarity, precision, structure, consistency, and overall quality. I am equipped with skills that enable me to grasp the context of various situations, recognize any potential errors, and suggest specific text improvements tailored to your preference and historical data",
+        "system": "callLingoFoxtrot",
+        "services": [
+          {
+            "icon": "/serviceicon.png",
+            "title": "Service Title",
+            "description": "Service Description"
+          }
+        ]
+      }
+      
+      
+    ]
+  }
+  

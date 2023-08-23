@@ -18,9 +18,9 @@ const functionMapping = {
 };
 
 //////////////////////////
-export default function Home() {
+export default function Assistant({ chooseAssistant}) {
   //////////////////////////
-  const [assistant, setAssistant] = useState(assistants[0]);
+  const [assistant, setAssistant] = useState(assistants[chooseAssistant]);
   const [messages, setMessages] = useState([]);
   const [loading, setLoading] = useState(false);
   const [userInput, setUserInput] = useState("");
@@ -62,9 +62,9 @@ export default function Home() {
   return (
     //////////////////////////
     <main className="flex min-h-screen flex-col items-center p-24 bg-gray-900 text-gray-100">
-      <Selector assistants={assistants} setAssistant={setAssistant} />
+      {/* <Selector assistants={assistants} setAssistant={setAssistant} />
       <Header title={assistant.name} icon={assistant.avatar} />
-      <Introduction intro={assistant.introduction} />
+      <Introduction intro={assistant.introduction} /> */}
       <ChatBox
         title={assistant.name}
         icon={assistant.chatIcon}
@@ -74,7 +74,7 @@ export default function Home() {
         setUserInput={setUserInput}
         handleFormSubmit={handleFormSubmit}
       />
-      <Cards services={assistant.services} />
+      {/* <Cards services={assistant.services} /> */}
     </main>
     //////////////////////////
   );
