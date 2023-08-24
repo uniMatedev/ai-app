@@ -1,8 +1,8 @@
 // Home component
 "use client";
 
-import Models from "@/pages/components/Models"; // Updated import
-import Intro from "@/pages/components/Intro";
+import Models from "@/components/Models"; // Updated import
+import Intro from "@/components/Intro";
 import { useState } from "react";
 
 const temp = [

@@ -3,11 +3,11 @@
 import { useState } from "react";
 import React from "react";
 import { callLingoCharlie, callLingoDelta, callLingoEcho, callLingoFoxtrot } from "@/lib/apiHandlers";
-import Header from "@/pages/components/Header";
-import Introduction from "@/pages/components/Introduction";
-import ChatBox from "@/pages/components/ChatBox";
+import Header from "@/components/Header";
+import Introduction from "@/components/Introduction";
+import ChatBox from "@/components/ChatBox";
 
-import Selector from "@/pages/components/Selector";
+import Selector from "@/components/Selector";
 import { assistants } from "@/data/assistants";
 
 const functionMapping = {

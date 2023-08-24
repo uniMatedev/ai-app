@@ -8,7 +8,7 @@ import {
   callLingoEcho,
   callLingoFoxtrot,
 } from "@/lib/apiHandlers";
-import ChatBox from "@/pages/components/ChatBox";
+import ChatBox from "@/components/ChatBox";
 import { assistants } from "@/data/assistants";
 
 const functionMapping = {

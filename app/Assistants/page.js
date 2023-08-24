@@ -1,5 +1,5 @@
 'use client';
-import Assistant from "@/pages/components/Assistant";
+import Assistant from "@/components/Assistant";
 
 export default function Home() {
   return (
