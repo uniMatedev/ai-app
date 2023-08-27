@@ -1,21 +1,17 @@
 'use client';
 import Assistant from "@/components/Assistant";
+import ISPHeader from "@/components/ISPHeader";
+import { assistants } from "@/data/assistants"; // Import the assistants array
 
 export default function Home() {
   return (
-    <main >
-      <div>
-        <Assistant chooseAssistant={0} />
-      </div>
-      <div>
-        <Assistant chooseAssistant={1} />
-      </div>
-      <div>
-        <Assistant chooseAssistant={2} />
-      </div>
-      <div>
-        {/* <Assistant chooseAssistant={3} /> */}
-      </div>
+    <main>
+      <ISPHeader />
+      {assistants.map((_, index) => (
+        <div key={index}>
+          <Assistant chooseAssistant={index} />
+        </div>
+      ))}
     </main>
   );
 }

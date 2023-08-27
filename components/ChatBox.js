@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function ChatBox({title, icon, messages, loading, userInput, setUserInput, handleFormSubmit}) {
+export default function ChatBox({title, icon, messages, loading, userInput, setUserInput, handleFormSubmit, placeholder}) {
     
   return (
     <div className="bg-white shadow-lg rounded-lg p-6 border border-gray-900 mt-10">
@@ -37,7 +37,7 @@ export default function ChatBox({title, icon, messages, loading, userInput, setU
         <textarea
     rows="8" /* Adjust this value to your desired number of visible lines */
     className="text-gray-800 bg-white p-2 border border-gray-500 rounded-lg focus:outline-none focus:border-gray-600 flex-grow mr-2"
-    placeholder={loading ? "loading" : "I want to make an art piece about space, kind of like a love story set among the stars. I really like the style of Van Gogh's Starry Night. Let's use star and galaxy stuff for the look, and light everything softly. I want the art to fit a 16:9 screen. I'd like to use a rocket (🚀), a heart (❤️), a star (⭐), and an alien (👽) somewhere in the piece to show it's a love story in space. Make the space part the most important (25), then the lovers (18), and lastly their love story (12). Just keep things hopeful and lovely. No dark or dystopian stuff, okay? This user input takes less technical language but still conveys the main preferences and ideas, which I can use to create a prompt."}
+    placeholder={loading ? "loading" : placeholder}
     value={userInput}
     onChange={(e) => setUserInput(e.target.value)}
     type="text"
