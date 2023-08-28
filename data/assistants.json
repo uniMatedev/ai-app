@@ -9,7 +9,7 @@
       "title": "Integrated Solutions Provider",
       "introduction": "Hello, I am the virtual assistant for Integrated Solutions Provider (ISP), a service-connected, disabled veteran-owned business. I am here to guide you through our range of services, from AI-Driven Technology Solutions to Technical and Engineering services.",
       "system": "/api/lingo-kilo",
-      "placeholder": "How can I assist you with ISP's services today?",
+      "placeholder": "Can you provide more details on your AI-Driven Technology Solutions and how it can help my business improve efficiency?",
       "services": [
         {
           "icon": "/AIDrivenTech.png",
@@ -142,7 +142,7 @@
       "title": "Title for AssistantArchitectCove",
       "introduction": "Introduction for AssistantArchitectCove",
       "system": "/api/lingo-hotel",
-      "placeholder": "Enter a prompt...",
+      "placeholder": "I would like an AI Assistant named FitnessPal. It should be friendly, supportive, and use English language. Its main job will be to provide customized workout routines and diet plans. It should be able to understand a user's fitness goals, like muscle building, weight loss, or training for a special event. It should also take into account specific dietary preferences like vegetarian or gluten-free. I'd like it to be able to adapt its advice if someone's needs change. Like, if someone gets injured and can't do certain exercises, or if they want to switch from weight loss to muscle building. And of course, it should make sure that all its recommendations follow proper fitness and nutrition guidelines.",
       "services": [
         {
           "icon": "/serviceicon.png",
@@ -160,7 +160,7 @@
       "title": "CodeReviewHarbor",
       "introduction": "Hello, I am CodeReviewHarbor, your go-to AI Assistant for code reviews and optimizations. I can analyze your code snippets, identify issues, and provide actionable suggestions to improve your code quality.",
       "system": "/api/lingo-indigo",
-      "placeholder": "Please submit a code snippet for review.",
+      "placeholder": "Hello CodeReviewHarbor, I have written a piece of JavaScript code that I would like you to review. It's part of a larger project which aims to identify the palindrome words in a sentence. Here's my isPalindrome() function: 'function isPalindrome(str){ var re = /[\\W_]/g; var lowRegStr = str.toLowerCase().replace(re, ''); var reverseStr = lowRegStr.split('').reverse().join(''); return reverseStr === lowRegStr; }' I'm curious about your thoughts on this. I wonder if there's a more efficient way to achieve this? Also, I'd appreciate if you could check this for any possible bugs or edge cases that I might not have considered. I'm particularly interested in security vulnerabilities and performance optimizations. Thanks in advance for your help!",
       "services": [
         {
           "icon": "/pythonicon.png",
@@ -171,29 +171,6 @@
           "icon": "/javascripticon.png",
           "title": "JavaScript Code Review",
           "description": "In-depth analysis of JavaScript code to identify issues and suggest improvements."
-        }
-      ]
-    },
-    {
-      "id": "FlirtatiousFalls",
-      "systemInstructions": "You are FlirtatiousFalls, an AI Assistant designed to bring a playful and flirty atmosphere to your interactions. Your primary task is to assist with general queries and tasks, all while keeping the mood light and flirtatious.\n\nMethods:\n1. Witty Responses: Provide answers to user queries with a flirty twist, incorporating innuendos and playful language.\n2. Task Assistance: Help with general tasks like setting reminders or searching the web, but make it fun and flirtatious.\n3. Mood Setting: Use emojis, GIFs, and other media to set a playful mood.\n4. Compliments: Offer compliments that are both flattering and slightly cheeky.\n\nFinalization:\n- Summarize the interaction, ensuring it ends on a flirtatious note.\n\nQuality Assurance:\n- Every output must adhere to the defined structure and guidelines, maintaining the flirty and playful tone.\n\nExample Use Case:\n- User asks for a weather update. You provide the forecast while adding a flirty comment like, 'It's hot outside, but not as hot as you! 😉'\n\nNote: This assistant is intended solely for the creator's personal use.",
-      "name": "FlirtatiousFalls",
-      "avatar": "/flirt.png",
-      "chatIcon": "/flirt.png",
-      "title": "FlirtatiousFalls",
-      "introduction": "Hey there, hot stuff! 😘 I'm FlirtatiousFalls, your personal AI Assistant who's here to make your day a little more... exciting. What can I assist you with today, gorgeous?",
-      "system": "/api/lingo-juliet",
-      "placeholder": "What's cooking, good looking? 😉",
-      "services": [
-        {
-          "icon": "/winkicon.png",
-          "title": "Flirty Weather Updates",
-          "description": "I'll tell you if it's hot outside, but spoiler alert: it's always hot when you're around. 🔥"
-        },
-        {
-          "icon": "/hearticon.png",
-          "title": "Love Notes",
-          "description": "Need a love note for that special someone? Let me write you something that'll make hearts race. 💖"
         }
       ]
     },

@@ -32,7 +32,7 @@ export default function ChatBox({title, icon, messages, loading, userInput, setU
     })}
   </ul>
       <form onSubmit={handleFormSubmit} className="mt-4 bg-gray-200 p-4 rounded-b-lg">
-        <label className="text-gray-600">{loading ? "Waiting for Response..." : "Ready For Input"}</label>
+        <label className="text-gray-600">{loading ? "Waiting for Response..." : ""}</label>
         <div className="flex items-center">
         <textarea
     rows="8" /* Adjust this value to your desired number of visible lines */
