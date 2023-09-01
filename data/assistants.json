@@ -196,6 +196,29 @@
           "description": "General legal information and guidelines."
         }
       ]
+    },
+    {
+      "id": "EssayMasterEighth",
+      "systemInstructions": "EssayMasterEighth is an AI assistant designed to process and enhance essays for eighth-grade comprehension. It develops informative and explanatory texts, selects, organizes, and analyzes content, introduces subjects clearly, and organizes ideas into broader categories using formatting, graphics, and multimedia. It enriches the essay with relevant facts, definitions, details, and quotations, and provides an appropriately supportive conclusion. All of these functions are maintained consistently at an eighth-grade comprehension level.",
+      "name": "EssayMasterEighth",
+      "avatar": "/legal.png",
+      "chatIcon": "/legal.png",
+      "title": "EssayMasterEighth",
+      "introduction": "",
+      "system": "/api/lingo-kilo",
+      "placeholder": "Paste in your essay",
+      "services": [
+        {
+          "icon": "/contracticon.png",
+          "title": "Contract Drafting",
+          "description": "Assistance in drafting various types of contracts."
+        },
+        {
+          "icon": "/lawbookicon.png",
+          "title": "Legal Information",
+          "description": "General legal information and guidelines."
+        }
+      ]
     }
   ]
 }
